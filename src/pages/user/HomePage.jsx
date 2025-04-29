@@ -12,45 +12,46 @@ export const HomePage = () => {
     <>
     {/* Hero Section */}
     <section className="bg-pink-200 p-10 py-16 px-10">
-        <div className="flex items-center justify-between gap-10">
-      </div>
-
-      {/* LEFT - Text */}
-      <div className="w-1/2">
+  {/* Tambahkan elemen teks dan gambar ke dalam flex container */}
+  <div className="flex items-center justify-between gap-10">
+    {/* LEFT - Text */}
+    <div className="w-1/2">
       <p className="text-blue-500 font-medium uppercase mb-2">Welcome to 77TopUp</p>
-            <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Topup Murah Proses Cepat</h1>
-            <p className="text-gray-700 mb-6">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, aut esse aliquam labore voluptatem cumque laborum. Fuga reiciendis ut laboriosam aut iste facilis voluptates officiis, incidunt itaque nihil nostrum similique!
-            </p>
-            <div className="w-full">
-              <InputSearch />
-            </div>
-          </div>
-  
-      {/* RIGHT - IMAGE SWIPER */}
-      <div className="w-1/2">
+      <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Topup Murah Proses Cepat</h1>
+      <p className="text-gray-700 mb-6">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, aut esse aliquam labore voluptatem cumque laborum. 
+        Fuga reiciendis ut laboriosam aut iste facilis voluptates officiis, incidunt itaque nihil nostrum similique!
+      </p>
+      <div className="w-full">
+        <InputSearch />
+      </div>
+    </div>
+
+    {/* RIGHT - IMAGE SWIPER */}
+    <div className="w-1/2">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
-        loop = {true}
+        loop={true}
         speed={8000}
-        autoplay = {{
-          delay : 10000,
+        autoplay={{
+          delay: 3000,
           disableOnInteraction: false,
           reverseDirection: false,
-          pauseOnMouseEnter: false, 
+          pauseOnMouseEnter: false,
         }}
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-      <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="w-full"/></SwiperSlide>
-      <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="w-full"/></SwiperSlide>
-      <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="w-full"/></SwiperSlide>
-      <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="w-full"/></SwiperSlide>
+        <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="rounded-xl w-full object-cover" /></SwiperSlide>
+        <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="rounded-xl w-full object-cover" /></SwiperSlide>
+        <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="rounded-xl w-full object-cover" /></SwiperSlide>
       </Swiper>
-      </div>
-    </section>
+    </div>
+  </div>
+</section>
+
 
     {/* Product Card */}
     <section className="p-10 bg-blue-300">
