@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 export const Login = () => {
   return (
@@ -16,6 +17,9 @@ export const Login = () => {
           className="input input-bordered w-full max-w-xs"
         />
         <button className="btn btn-primary w-full max-w-xs">Login</button>
+        <Link to="/auth/register" className="btn btn-link text-white">
+          Saya belum punya akun
+        </Link>
       </div>
     </div>
   );

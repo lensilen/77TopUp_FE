@@ -1,7 +1,7 @@
 import React from "react";
 import { ProductCard } from "../components/card/product-card";
-import { Navbar } from "../components/navigation-bar/navigation-container";
 import { useParams } from "react-router";
+
 export const Search = () => {
   const { keyword } = useParams();
 
