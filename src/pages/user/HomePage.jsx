@@ -11,7 +11,7 @@ export const HomePage = () => {
   return (
     <>
     {/* Hero Section */}
-  <section className="bg-pink-200 p-10 py-16 px-10">
+  <section className="bg-[#A1E3F9] p-10 py-16 px-10">
   <div className="flex items-center justify-between gap-10">
     {/* LEFT - Text */}
     <div className="flex flex-wrap ">
@@ -53,36 +53,28 @@ export const HomePage = () => {
 
 
     {/* Product Card */}
-    <section className="p-10 bg-white min-h-screen">
+    <section className="p-10 bg-[#D1F8EF] min-h-screen">
   <div className="container mx-auto px-4">
     
     {/* Judul/Kategori */}
     <div className="flex flex-wrap gap-4 mb-8">
-      <div className="bg-blue-500 text-white font-semibold px-4 py-2 rounded">
-        Game Via ID 24 JAM
+      <div className="bg-[#525FE1] text-white font-semibold px-4 py-2 rounded">
+        Game 
       </div>
     </div>
-
-    {/* Judul
-    <div className="text-xl font-semibold mb-4">Ini Adalah Game</div> */}
 
     {/* Card Produk */}
     <div className="flex flex-wrap gap-4 mb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard image="/public/Genshin_waifu2x_photo_noise3_scale.png"  title="Genshin Impact" />
+        <ProductCard image="/public/MLBB.png"  title="Mobile Legends"/>
+        <ProductCard image=""  title="PUBG Mobile"/>
+        <ProductCard image=""  title="Honkai Star Rail"/>
+        <ProductCard image=""  title="Free Fire"/>
       </div>
     </div>
   </div>
 </section>
-
-
     </>
   );
 };
