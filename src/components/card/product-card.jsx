@@ -4,7 +4,7 @@ export const ProductCard = ({ title, description, image }) => {
   console.log(title);
   console.log(description);
   return (
-    <div className="card bg-base-100 w-96 shadow-sm">
+    <div className="card bg-base-100 flex flex-wrap justify-between shadow-sm">
       <figure>
         <img
           src= {image}

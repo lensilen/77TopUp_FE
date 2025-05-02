@@ -11,10 +11,10 @@ export const HomePage = () => {
   return (
     <>
     {/* Hero Section */}
-  <section className="bg-[#A1E3F9] p-10 py-16 px-10">
-  <div className="flex items-center justify-between gap-10">
+  <section className="bg-[#A1E3F9] py-16 px-6 md:px-16">
+  <div className="flex flex-col md:flex-row items-center justify-between gap-10 max-w-7xl mx-auto">
     {/* LEFT - Text */}
-    <div className="flex flex-wrap ">
+    <div className="md:w-1/2">
       <p className="text-blue-500 font-medium uppercase mb-2">Welcome to 77TopUp</p>
       <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Topup Murah Proses Cepat</h1>
       <p className="text-gray-700 mb-6">
@@ -27,7 +27,7 @@ export const HomePage = () => {
     </div>
 
     {/* RIGHT - IMAGE SWIPER */}
-    <div className="flex items-center justify-between w-1/2">
+   <div className="md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02]">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={30}
@@ -43,9 +43,9 @@ export const HomePage = () => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="rounded-xl w-full object-cover" /></SwiperSlide>
-        <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="rounded-xl w-full object-cover" /></SwiperSlide>
-        <SwiperSlide><img src="/77topup_logo_1b.png" alt="" className="rounded-xl w-full object-cover" /></SwiperSlide>
+        <SwiperSlide><img src="/public/Genshin2.png" alt="" className="w-full h-72 md:h-96 object-cover" /></SwiperSlide>
+        <SwiperSlide><img src="/public/Honkai.png" alt="" className="w-full h-72 md:h-96 object-cover" /></SwiperSlide>
+        <SwiperSlide><img src="/public/MLBB.png" alt="" className="w-full h-72 md:h-96 object-cover" /></SwiperSlide>
       </Swiper>
     </div>
   </div>
@@ -54,7 +54,7 @@ export const HomePage = () => {
 
     {/* Product Card */}
     <section className="p-10 bg-[#D1F8EF] min-h-screen">
-  <div className="container mx-auto px-4">
+  <div className="max-w-7xl mx-auto px-4">
     
     {/* Judul/Kategori */}
     <div className="flex flex-wrap gap-4 mb-8">
@@ -64,14 +64,11 @@ export const HomePage = () => {
     </div>
 
     {/* Card Produk */}
-    <div className="flex flex-wrap gap-4 mb-8">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-        <ProductCard image="/public/Genshin_waifu2x_photo_noise3_scale.png"  title="Genshin Impact" />
+        <ProductCard image="/public/Genshin2.png"  title="Genshin Impact" />
         <ProductCard image="/public/MLBB.png"  title="Mobile Legends"/>
-        <ProductCard image=""  title="PUBG Mobile"/>
-        <ProductCard image=""  title="Honkai Star Rail"/>
-        <ProductCard image=""  title="Free Fire"/>
-      </div>
+        <ProductCard image="/public/PUBG.png"  title="PUBG Mobile"/>
+        <ProductCard image="/public/Honkai.png"  title="Honkai Star Rail"/>
     </div>
   </div>
 </section>
