@@ -3,6 +3,8 @@ import { InputSearch } from "../../components/navigation-bar/input-search";
 import { useParams } from "react-router";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper/modules';
 import { ProductCard } from "../../components/card/product-card";
 import { Autoplay } from "swiper/modules";
 export const HomePage = () => {
@@ -29,11 +31,14 @@ export const HomePage = () => {
     {/* RIGHT - IMAGE SWIPER */}
    <div className="md:w-1/2 w-full rounded-2xl overflow-hidden shadow-lg transition-transform hover:scale-[1.02]">
       <Swiper
-        modules={[Autoplay]}
+        modules={[Pagination,Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
         loop={true}
-        speed={8000}
+        speed={6000}
+        pagination={{
+          dynamicBullets: true,
+        }}
         autoplay={{
           delay: 3000,
           disableOnInteraction: false,
@@ -43,9 +48,10 @@ export const HomePage = () => {
         onSlideChange={() => console.log('slide change')}
         onSwiper={(swiper) => console.log(swiper)}
       >
-        <SwiperSlide><img src="/public/Genshin2.png" alt="" className="w-full h-72 md:h-96 object-cover" /></SwiperSlide>
+        <SwiperSlide><img src="/public/I2.png" alt="" className="w-full h-72 md:h-96 object-cover" /></SwiperSlide>
         <SwiperSlide><img src="/public/Honkai.png" alt="" className="w-full h-72 md:h-96 object-cover" /></SwiperSlide>
         <SwiperSlide><img src="/public/MLBB.png" alt="" className="w-full h-72 md:h-96 object-cover" /></SwiperSlide>
+        <SwiperSlide><img src="/public/PUBG.png" alt="" className="w-full h-72 md:h-96 object-cover" /></SwiperSlide>
       </Swiper>
     </div>
   </div>
@@ -67,7 +73,7 @@ export const HomePage = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <ProductCard image="/public/Genshin2.png"  title="Genshin Impact" />
         <ProductCard image="/public/MLBB.png"  title="Mobile Legends"/>
-        <ProductCard image="/public/PUBG.png"  title="PUBG Mobile"/>
+        <ProductCard image="/public/I3.png"  title="PUBG Mobile"/>
         <ProductCard image="/public/Honkai.png"  title="Honkai Star Rail"/>
     </div>
   </div>
