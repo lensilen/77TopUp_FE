@@ -18,6 +18,10 @@ export const Footer = () => {
               transaksi yang mudah dan terpercaya. Nikmati pengalaman bermain
               game tanpa gangguan dengan layanan top up terbaik dari kami.
             </p>
+            <P>
+              Info layanan pelanggan : 089876543210 (WA)
+              tujuhtujuhtopup@gmail.com (Email)
+            </P>
           </div>
         </div>
 
