@@ -32,7 +32,7 @@ export const Navbar = () => {
   const hiddenPaths = ["/"];
 
   return (
-    <div className="navbar bg-base-200 shadow-sm border-b border-base-300 pb-2 pt-2 pl-5 pr-5 fixed z-50">
+    <div className="navbar bg-base-200 shadow-sm border-b border-base-300 pb-2 pt-2 pl-5 pr-5 sticky z-50">
       {/* Logo + search bar */}
       <div className="flex flex-1 items-center gap-20">
         {/* <Link to="/" className="btn btn-ghost text-2xl">77Topup</Link> */}
