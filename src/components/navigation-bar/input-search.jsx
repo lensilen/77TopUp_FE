@@ -22,17 +22,17 @@ export const InputSearch = () => {
     <>
       <div className="relative max-w-md">
         <input
-          placeholder="Cari game atau voucher..."
-          className="input w-full focus:outline-none focus:border-gray-300 pr-14 du"
+          placeholder="Cari game favoritmu..."
+          className="input w-full rounded-lg pr-14 focus:outline-none focus:border-gray-300 transition-colors du"
           ref={ref}
           onKeyDown={handleSearch}
         />
         <button
           onClick={handleSearch}
           // className="absolute btn inset-y-0 right-0 z-30"
-          className="absolute btn-ghost inset-y-0 right-0 z-30 pl-3 pr-3"
+          className="absolute inset-y-0 right-0 z-30 pl-3 pr-4 active:drop-shadow-sm rounded-full"
         >
-          <FaMagnifyingGlass size={20} fill="bg-base-200"/>
+          <FaMagnifyingGlass size={20} className="text-gray-500 " />
         </button>
       </div>
     </>

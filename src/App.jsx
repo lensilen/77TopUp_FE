@@ -8,6 +8,8 @@ import { Query } from "./pages/Query";
 import { Login } from "./pages/auth/Login";
 import { Register } from "./pages/auth/Register";
 import { HomePage } from "./pages/user/HomePage";
+import { EditGames } from "./pages/admin/EditGames";
+import { EditPayments } from "./pages/admin/EditPayments";
 
 export default function App() {
   return (
@@ -20,6 +22,8 @@ export default function App() {
           <Route path="/search/:keyword" element={<Search />} />
           <Route path="/auth/login" element={<Login />}></Route>
           <Route path="/auth/register" element={<Register />}></Route>
+          <Route path="/admin/games" element={<EditGames />}></Route>
+          <Route path="/admin/payments" element={<EditPayments />}></Route>
           <Route path="/transaksi"></Route>
         </Route>
           <Route path="query" element={<Query />} />
