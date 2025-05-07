@@ -30,8 +30,8 @@ Situs ini dibuat sebagai Capstone Final Project oleh kelompok 2 dengan pembagian
 ## Installation
 
 ```sh
-git clone https://github.com/lensilen/77TopUp.git
-cd 77TopUp
+git clone https://github.com/lensilen/77TopUp_FE.git
+cd 77TopUp_FE
 npm install
 npm run dev
 ```
