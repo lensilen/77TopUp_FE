@@ -23,6 +23,10 @@ export const Footer = () => {
               089876543210 (WA)<br />
               tujuhtujuhtopup@gmail.com (Email)
             </p>
+            <p>
+              Info layanan pelanggan : 089876543210 (WA)
+              tujuhtujuhtopup@gmail.com (Email)
+            </p>
           </div>
         </div>
 
