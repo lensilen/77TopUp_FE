@@ -18,32 +18,32 @@ export const Footer = () => {
               transaksi yang mudah dan terpercaya. Nikmati pengalaman bermain
               game tanpa gangguan dengan layanan top up terbaik dari kami.
             </p>
-            <P>
-              Info layanan pelanggan : 089876543210 (WA)
+            <p className="mt-6">
+              <span className="font-bold">Info layanan pelanggan :</span><br />
+              089876543210 (WA)<br />
               tujuhtujuhtopup@gmail.com (Email)
-            </P>
+            </p>
           </div>
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center md:justify-end text-center md:text-right space-y-2">
           <div>
             <img
-              src="/support (2).png"
-              alt="77TopUp Logo"
-              className="mx-auto md:mx-0 mb-4 w-10"
+              src="/tiktok.png"
+              alt="TikTok"
+              className="mx-auto md:mx-0 mb-4 w-10 hover:scale-110 transition-all duration-200"
             />
 
             <a
               href="https://instagram.com/yourlink"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:underline transition duration-200"
+              className="text-white hover:scale-110 transition-all duration-200"
             >
               <img
                 src="/instagram.png"
                 alt="Instagram"
-                className="mx-auto w-8 mb-4
-                "
+                className="mx-auto w-8 mb-4 hover:scale-110 transition-all duration-200"
               />
             </a>
 
@@ -51,18 +51,18 @@ export const Footer = () => {
               href="https://x.com/yourlink"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:underline transition duration-200"
+              className="text-white hover:scale-110 transition-all duration-200"
             >
-              <img src="/twitter.png" alt="X" className="mx-auto w-8 mb-4" />
+              <img src="/twitter.png" alt="X" className="mx-auto w-8 mb-4 hover:scale-110 transition-all duration-200" />
             </a>
 
             <a
               href="https://facebook.com/yourlink"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:underline transition duration-200"
+              className="text-white hover:scale-110 transition-all duration-200"
             >
-              <img src="/facebook.png" className="mx-auto w-8 mb-4" />
+              <img src="/facebook.png" className="mx-auto w-8 mb-4 hover:scale-110 transition-all duration-200" />
             </a>
           </div>
         </div>
